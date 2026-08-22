@@ -1,0 +1,30 @@
+.sticky-cta {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  padding: 0.75rem clamp(1rem, 5vw, 1.5rem);
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+  background: rgba(246, 241, 231, 0.94);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid var(--line);
+  transform: translateY(110%);
+  transition: transform 0.4s var(--ease);
+}
+
+.sticky-cta.visible {
+  transform: translateY(0);
+}
+
+.sticky-cta .btn {
+  width: 100%;
+  padding: 0.95rem 1.5rem;
+}
+
+@media (min-width: 860px) {
+  .sticky-cta {
+    display: none;
+  }
+}

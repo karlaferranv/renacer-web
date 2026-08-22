@@ -1,0 +1,64 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem clamp(1.25rem, 5vw, 3rem);
+  background: rgba(246, 241, 231, 0.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.4s ease, background 0.4s ease;
+}
+
+.navbar.scrolled {
+  border-bottom-color: var(--line);
+  background: rgba(246, 241, 231, 0.92);
+}
+
+.navbar-mark {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  color: var(--earth-dark);
+}
+
+.navbar-mark svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.navbar-links {
+  display: none;
+  align-items: center;
+  gap: 2.1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  color: var(--earth-soft);
+}
+
+.navbar-links a {
+  transition: color 0.3s ease;
+}
+.navbar-links a:hover {
+  color: var(--terracotta);
+}
+
+@media (min-width: 860px) {
+  .navbar-links {
+    display: flex;
+  }
+}
+
+.navbar .btn {
+  padding: 0.7rem 1.4rem;
+  font-size: 0.82rem;
+}
