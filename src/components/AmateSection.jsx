@@ -11,16 +11,26 @@ export default function AmateSection() {
           <span className="eyebrow">Fase 01 · 21 días</span>
           <h3>Ámate</h3>
           <p>
-            Antes de manifestar cualquier cosa hacia afuera, necesitas una base sólida hacia
-            adentro. Ámate es un journal de acompañamiento diario diseñado para reconstruir tu
-            relación contigo misma, con un prompt que te sostiene cada día del proceso.
+            Antes de construir algo nuevo, necesitas reconocer desde dónde estás construyendo.
+            Ámate es un proceso de 21 días para observar tu relación contigo misma con más
+            honestidad: la manera en la que te hablas, lo que toleras, las promesas que te
+            haces y no cumples, las heridas que todavía condicionan tus decisiones.
+          </p>
+          <p>
+            No se trata de repetir frases bonitas frente al espejo. Se trata de conocerte lo
+            suficiente para comenzar a elegirte de verdad.
           </p>
           <ul>
-            <li>Sanar heridas internas que siguen dirigiendo tus decisiones</li>
-            <li>Cambiar creencias limitantes por una voz interna más amable</li>
+            <li>Tu autoimagen, tus límites y tu diálogo interno</li>
+            <li>Las creencias y relaciones que siguen dirigiendo tus decisiones</li>
             <li>Journaling guiado, día a día, sin dejarte perdida</li>
           </ul>
-          <p>Es el punto de partida de RENACER, y también existe como experiencia independiente.</p>
+          <p className="phase-outcome">
+            <strong>Lo que comienza a tomar forma:</strong> más claridad sobre quién eres, lo
+            que quieres y lo que ya no estás dispuesta a seguir negociando contigo misma.
+            Ámate no busca convertirte en otra persona. Busca que puedas volver a
+            reconocerte.
+          </p>
         </div>
       </div>
     </section>

@@ -34,6 +34,15 @@
   font-size: clamp(1.9rem, 4.6vw, 3rem);
   max-width: 620px;
 }
+.renacer-mark {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(3.2rem, 12vw, 7rem);
+  line-height: 0.95;
+  color: var(--terracotta);
+  margin: 0 0 0.6rem;
+  letter-spacing: -0.01em;
+}
 .explanation-lead {
   font-size: clamp(1.05rem, 2.2vw, 1.25rem);
   color: var(--earth-dark);
@@ -81,6 +90,12 @@
 .journey-head h2 {
   font-size: clamp(1.9rem, 4.6vw, 3rem);
 }
+.journey-intro {
+  margin-top: 1.2rem;
+  color: var(--earth-soft);
+  line-height: 1.8;
+  font-size: 1rem;
+}
 .journey-spine {
   position: relative;
   display: grid;
@@ -93,7 +108,7 @@
   top: 10px;
   bottom: 10px;
   width: 1px;
-  background: linear-gradient(to bottom, var(--terracotta), var(--copper) 50%, var(--green-nature));
+  background: linear-gradient(to bottom, var(--terracotta), var(--wine));
   opacity: 0.4;
 }
 @media (min-width: 860px) {
@@ -214,10 +229,30 @@
   border-radius: 50%;
   background: var(--terracotta);
 }
+.phase-outcome {
+  margin-top: 1.6rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.02rem;
+  color: var(--earth-dark);
+}
+.phase-outcome strong {
+  font-style: normal;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  display: block;
+  margin-bottom: 0.5rem;
+}
 
 /* ============ INCLUDED ============ */
 .included {
-  background: var(--deep-blue);
+  background: var(--wine);
   color: var(--white-warm);
 }
 .included h2 {
@@ -249,7 +284,7 @@
   }
 }
 .included-item {
-  background: var(--deep-blue);
+  background: var(--wine);
   padding: 1.8rem 1.6rem;
 }
 .included-item h4 {
@@ -602,7 +637,7 @@
 
 /* ============ FINAL CTA ============ */
 .final-cta {
-  background: var(--earth-dark);
+  background: var(--wine);
   color: var(--white-warm);
   text-align: center;
 }
@@ -614,7 +649,7 @@
 }
 .final-cta h2 em {
   font-style: italic;
-  color: var(--copper);
+  color: var(--pop);
 }
 .final-cta p {
   margin: 1.4rem auto 2.4rem;
@@ -625,7 +660,7 @@
 
 /* ============ FOOTER ============ */
 .footer {
-  background: var(--earth-dark);
+  background: var(--wine);
   color: rgba(251, 248, 243, 0.7);
   padding: 3rem clamp(1.25rem, 5vw, 3rem) 2.2rem;
   border-top: 1px solid rgba(251, 248, 243, 0.12);

@@ -1,22 +1,22 @@
 /* ============================================================
    RENACER — Tokens de diseño
-   Paleta: crema / terracota / cobre / tierra / verde / azul profundo
+   Paleta: crema blush / terracota / chocolate vino
    Tipografía: Fraunces (display editorial) + Manrope (texto)
    ============================================================ */
 
 :root {
   /* Color */
-  --cream: #f6f1e7;
-  --cream-deep: #eee3d0;
-  --white-warm: #fbf8f3;
-  --terracotta: #a8663d;
-  --terracotta-soft: #c98858;
-  --copper: #c9a15f;
-  --earth-dark: #332821;
-  --earth-soft: #6c5c4c;
-  --green-nature: #5c6b4f;
-  --deep-blue: #26343c;
-  --line: rgba(51, 40, 33, 0.14);
+  --cream: #faf1ea;
+  --cream-deep: #f2e2d6;
+  --white-warm: #fdf8f4;
+  --terracotta: #b5502c;
+  --terracotta-soft: #d98b62;
+  --copper: #c79a6b;
+  --wine: #4a2117;
+  --pop: #eaff2b;
+  --earth-dark: #3a2318;
+  --earth-soft: #7d6455;
+  --line: rgba(74, 33, 23, 0.14);
 
   /* Tipografía */
   --font-display: 'Fraunces', 'Iowan Old Style', serif;
@@ -119,6 +119,21 @@ button:focus-visible {
   margin-bottom: 1.1rem;
 }
 
+/* Acento eléctrico — usar con moderación, 2-3 momentos por página */
+.highlight {
+  background: var(--pop);
+  color: var(--wine);
+  font-style: normal;
+  padding: 0.04em 0.32em;
+  border-radius: 2px;
+  display: inline-block;
+  transform: rotate(-1deg);
+}
+.pop-text {
+  color: var(--pop);
+  font-style: italic;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -172,4 +187,35 @@ button:focus-visible {
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Divisor minimalista: línea — diamante — línea, inspirado en la referencia de marca */
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 0.9rem 0;
+}
+.divider::before,
+.divider::after {
+  content: '';
+  width: 28px;
+  height: 1px;
+  background: var(--terracotta);
+  opacity: 0.55;
+}
+.divider-left {
+  justify-content: flex-start;
+  margin-left: 0;
+}
+.divider-left::before {
+  display: none;
+}
+.divider-mark {
+  width: 5px;
+  height: 5px;
+  transform: rotate(45deg);
+  background: var(--terracotta);
+  flex-shrink: 0;
 }

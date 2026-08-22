@@ -13,11 +13,11 @@ export default function ForYou() {
           <div className="foryou-col">
             <h3>RENACER es para ti si...</h3>
             <ul>
-              <li>Sientes que has crecido, pero algo interno se sigue repitiendo</li>
-              <li>Quieres herramientas prácticas, no solo inspiración pasajera</li>
-              <li>Estás lista para sostener un proceso de 90 días, no una solución instantánea</li>
-              <li>Buscas volver a confiar en tu propia voz, más que en la de otros</li>
-              <li>Quieres una vida más alineada, construida desde adentro hacia afuera</li>
+              <li>Por fuera todo parece resuelto, pero por dentro sigues esperando que algo cambie de verdad</li>
+              <li>Ya te sabes de memoria los consejos; lo que te falta es sostenerlos más de tres días</li>
+              <li>Estás dispuesta a darle 90 días reales a tu proceso, no una promesa de fin de semana</li>
+              <li>Estás cansada de escuchar a todos menos a ti misma</li>
+              <li>Quieres una vida que se sienta tuya, no una que solo se vea bien desde afuera</li>
             </ul>
           </div>
           <div className="foryou-col dim">

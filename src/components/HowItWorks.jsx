@@ -3,7 +3,7 @@ import { useReveal } from '../hooks/useReveal'
 const items = [
   { title: 'Tu momento del día', text: 'De 15 a 30 minutos, a tu ritmo: audio o video corto, reflexión y journaling guiado.' },
   { title: 'Preguntas, no respuestas', text: 'Cada día te lleva a mirar hacia adentro con preguntas reales, retos suaves y mapas visuales cuando el proceso lo pide.' },
-  { title: 'Acompañamiento constante', text: 'Grupo privado de apoyo y una guía con IA que continúa la conversación de tu diario, cada día, a tu propio paso.' },
+  { title: 'Acompañamiento constante', text: 'Una guía con IA que continúa la conversación de tu diario cada día, a tu propio paso, sin juzgar ni darte respuestas absolutas.' },
 ]
 
 export default function HowItWorks() {

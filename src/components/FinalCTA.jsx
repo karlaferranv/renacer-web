@@ -5,9 +5,9 @@ export default function FinalCTA() {
     <section className="section final-cta">
       <div className="section-inner">
         <h2>
-          Tu próxima versión no llega sola. <em>Se construye.</em>
+          Puedes seguir esperando a sentirte lista. <em>O puedes empezar hoy, sin estarlo.</em>
         </h2>
-        <p>90 días es todo lo que se necesita para empezar a vivir desde una versión más alineada de ti misma.</p>
+        <p>Nadie llega lista a los 90 días que le cambian la vida. Solo llega y se queda. Eso es lo único que RENACER te pide.</p>
         <a href={purchaseLink('renacer')} target="_blank" rel="noopener noreferrer" className="btn btn-light">
           Comenzar mi RENACER
         </a>

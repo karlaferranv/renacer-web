@@ -16,7 +16,7 @@ export default function Footer() {
         <nav className="footer-links">
           <a href="#renacer">RENACER</a>
           <a href="#recorrido">El recorrido</a>
-          <a href="#karla">Karla</a>
+          <a href="#marca">Manifestación Magnética</a>
           <a href="#precios">Inversión</a>
           <a href="#faq">Preguntas</a>
           <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>

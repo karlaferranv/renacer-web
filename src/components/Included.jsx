@@ -6,7 +6,7 @@ const items = [
   { title: 'Audios y videos guía', text: 'Contenido breve para cada día, pensado para escuchar mientras vives tu vida real.' },
   { title: 'Meditaciones incluidas', text: 'Prácticas para acompañar los momentos más profundos del proceso.' },
   { title: 'Guía con inteligencia artificial', text: 'Una IA entrenada en tu proceso que conversa contigo cada día, sin juzgar ni dar respuestas absolutas.' },
-  { title: 'Recursos descargables y comunidad', text: 'Materiales de apoyo y un espacio de acompañamiento junto a otras mujeres en el mismo recorrido.' },
+  { title: 'Recursos descargables', text: 'Materiales de apoyo para llevar cada fase contigo, más allá de la pantalla.' },
 ]
 
 export default function Included() {
@@ -15,7 +15,7 @@ export default function Included() {
   return (
     <section className="section included">
       <div className="section-inner">
-        <span className="eyebrow" style={{ color: '#c9a15f' }}>Qué incluye</span>
+        <span className="eyebrow" style={{ color: '#d98b62' }}>Qué incluye</span>
         <h2>Todo lo que necesitas para sostener el proceso.</h2>
         <p className="included-sub">Nada queda suelto. Cada pieza de RENACER está pensada para acompañarte sin que tengas que adivinar el siguiente paso.</p>
 

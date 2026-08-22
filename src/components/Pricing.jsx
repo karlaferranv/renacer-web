@@ -30,7 +30,7 @@ export default function Pricing() {
             <li>Plataforma de acompañamiento día a día</li>
             <li>Videos, audios y meditaciones incluidas</li>
             <li>Guía con inteligencia artificial integrada</li>
-            <li>Comunidad y recursos descargables</li>
+            <li>Recursos descargables para cada fase</li>
           </ul>
           {siteConfig.available.renacer ? (
             <a href={purchaseLink('renacer')} target="_blank" rel="noopener noreferrer" className="btn btn-primary">

@@ -11,16 +11,26 @@ export default function EnergiaSection() {
           <span className="eyebrow">Fase 02 · 31 días</span>
           <h3>El Arte de la Energía</h3>
           <p>
-            Con una base más amorosa hacia ti misma, aprendes a dirigir conscientemente tu
-            energía en el día a día: cómo la cuidas, cómo la enfocas y cómo la conviertes en la
-            realidad que quieres vivir.
+            Cuando comienzas a conocerte, empiezas a notar algo importante: no toda tu
+            energía merece ir hacia todo. Aquí aprendes a observarla, protegerla y dirigirla
+            con mayor intención — la manifestación deja de ser "pensar positivo" y se
+            convierte en una práctica consciente.
+          </p>
+          <p>
+            Aprenderás a distinguir entre desear algo y realmente convertirte en alguien
+            capaz de sostenerlo.
           </p>
           <ul>
-            <li>Gratitud y respiración consciente como práctica diaria</li>
-            <li>Elevación real de tu energía, sin fórmulas mágicas</li>
-            <li>Manifestación consciente: intención más acción, no solo deseo</li>
+            <li>Gratitud, respiración y presencia como práctica diaria</li>
+            <li>Enfoque e intención sobre dónde pones tu energía cada día</li>
+            <li>Hábitos y emociones trabajados hacia la acción alineada</li>
           </ul>
-          <p>La segunda clase de integración de esta fase acompaña tus primeros 7 días con historias y enseñanzas propias.</p>
+          <p className="phase-outcome">
+            <strong>Lo que comienza a tomar forma:</strong> menos energía dispersa, más
+            presencia, más conciencia sobre dónde estás poniendo tu poder cada día. Porque la
+            energía sin dirección se dispersa; la energía con intención puede transformar una
+            vida.
+          </p>
         </div>
       </div>
     </section>

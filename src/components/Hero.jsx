@@ -8,7 +8,7 @@ export default function Hero() {
         <path
           d="M -50 620 C 150 520, 220 300, 420 260 C 620 220, 640 400, 500 460 C 400 500, 340 400, 420 360 C 480 332, 560 360, 560 410"
           fill="none"
-          stroke="#A8663D"
+          stroke="#B5502C"
           strokeWidth="1.4"
         />
       </svg>
@@ -16,13 +16,14 @@ export default function Hero() {
       <div className="hero-inner">
         <span className="eyebrow">Manifestación Magnética · Programa de 90 días</span>
         <h1>
-          Renacer no es empezar de cero.
+          Sabes resolverlo todo.
           <br />
-          Es <em>volver a ti.</em>
+          Menos <em className="highlight">a ti misma.</em>
         </h1>
         <p className="lead">
-          Un recorrido de 90 días para sanar tu relación contigo misma, aprender a dirigir tu
-          energía y construir, con acción real, la vida que llevas tiempo imaginando.
+          RENACER es un recorrido de 90 días para dejar de sostener tu vida desde el cansancio
+          y empezar a construirla desde una versión tuya que ya no necesita demostrarle nada
+          a nadie.
         </p>
 
         <div className="hero-actions">
