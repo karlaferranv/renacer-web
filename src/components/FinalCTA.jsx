@@ -5,9 +5,16 @@ export default function FinalCTA() {
     <section className="section final-cta">
       <div className="section-inner">
         <h2>
-          Puedes seguir esperando a sentirte lista. <em>O puedes empezar hoy, sin estarlo.</em>
+          Quizás no necesitas convertirte en alguien nueva. <em>Quizás necesitas volver a
+          escuchar a la persona que lleva tiempo intentando hablarte.</em>
         </h2>
-        <p>Nadie llega lista a los 90 días que le cambian la vida. Solo llega y se queda. Eso es lo único que RENACER te pide.</p>
+        <p className="final-cta-body">
+          RENACER no comienza cuando tienes toda tu vida resuelta. Comienza cuando decides
+          dejar de posponer la conversación contigo misma.
+        </p>
+        <p className="final-cta-steps">Volver a ti. Dirigir tu energía. Construir.</p>
+        <p className="final-cta-mark">RENACER.</p>
+        <p className="final-cta-tagline">Tres fases. Un mismo hilo conductor: tú.</p>
         <a href={purchaseLink('renacer')} target="_blank" rel="noopener noreferrer" className="btn btn-light">
           Comenzar mi RENACER
         </a>

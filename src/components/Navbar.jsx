@@ -34,7 +34,7 @@ export default function Navbar() {
       </nav>
 
       <a href={purchaseLink('renacer')} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-        Quiero RENACER
+        Comenzar mi RENACER
       </a>
     </header>
   )

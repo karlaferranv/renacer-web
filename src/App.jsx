@@ -1,16 +1,19 @@
 import './styles/sections.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Intro from './components/Intro'
+import Method from './components/Method'
 import RenacerExplanation from './components/RenacerExplanation'
 import Journey from './components/Journey'
 import AmateSection from './components/AmateSection'
 import EnergiaSection from './components/EnergiaSection'
 import MagneticaSection from './components/MagneticaSection'
-import Included from './components/Included'
+import WhatsInside from './components/WhatsInside'
+import ProductShowcase from './components/ProductShowcase'
+import Experience from './components/Experience'
 import ForYou from './components/ForYou'
-import HowItWorks from './components/HowItWorks'
+import NotThis from './components/NotThis'
 import AboutKarla from './components/AboutKarla'
+import KarlaFerran from './components/KarlaFerran'
 import Testimonials from './components/Testimonials'
 import Pricing from './components/Pricing'
 import FAQ from './components/FAQ'
@@ -24,16 +27,19 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <Intro />
+        <Method />
         <RenacerExplanation />
         <Journey />
         <AmateSection />
         <EnergiaSection />
         <MagneticaSection />
-        <Included />
+        <WhatsInside />
+        <ProductShowcase />
+        <Experience />
         <ForYou />
-        <HowItWorks />
+        <NotThis />
         <AboutKarla />
+        <KarlaFerran />
         <Testimonials />
         <Pricing />
         <FAQ />

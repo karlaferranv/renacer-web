@@ -14,24 +14,24 @@ export default function Hero() {
       </svg>
 
       <div className="hero-inner">
-        <span className="eyebrow">Manifestación Magnética · Programa de 90 días</span>
+        <span className="eyebrow">Manifestación Magnética</span>
+        <p className="renacer-mark hero-mark">RENACER</p>
         <h1>
-          Sabes resolverlo todo.
-          <br />
-          Menos <em className="highlight">a ti misma.</em>
+          <span className="highlight">90 días</span> para volver a ti, aprender a dirigir tu
+          energía y convertir tu visión en algo real.
         </h1>
+        <p className="hero-phases">ÁMATE · EL ARTE DE LA ENERGÍA · MAGNÉTICA</p>
         <p className="lead">
-          RENACER es un recorrido de 90 días para dejar de sostener tu vida desde el cansancio
-          y empezar a construirla desde una versión tuya que ya no necesita demostrarle nada
-          a nadie.
+          RENACER es un recorrido de transformación en tres fases, creado para acompañarte
+          desde tu mundo interior hasta aquello que quieres construir fuera de ti.
         </p>
 
         <div className="hero-actions">
           <a href={purchaseLink('renacer')} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-            Quiero RENACER
+            Comenzar mi RENACER
           </a>
           <a href="#recorrido" className="hero-secondary">
-            Conocer el recorrido completo
+            Conocer el recorrido
           </a>
         </div>
 

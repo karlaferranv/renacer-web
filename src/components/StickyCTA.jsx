@@ -14,7 +14,7 @@ export default function StickyCTA() {
   return (
     <div className={`sticky-cta ${visible ? 'visible' : ''}`}>
       <a href={purchaseLink('renacer')} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-        Quiero RENACER
+        Comenzar mi RENACER
       </a>
     </div>
   )

@@ -1,27 +1,23 @@
 const faqs = [
   {
-    q: '¿Necesito experiencia previa en desarrollo personal?',
-    a: 'No. RENACER está diseñado para acompañarte desde donde estés, sin importar si es tu primer proceso de transformación o si ya has hecho trabajo interno antes.',
+    q: '¿Necesito tener un negocio?',
+    a: 'No. Ámate y El Arte de la Energía son procesos personales. Magnética puede comenzar desde una idea, talento, conocimiento, proyecto o negocio que ya exista.',
   },
   {
-    q: '¿Esto es terapia?',
-    a: 'No. RENACER es un acompañamiento de transformación personal, no un tratamiento clínico ni un sustituto de terapia psicológica. Si estás atravesando un momento que requiere atención profesional, te recomendamos buscar apoyo especializado en paralelo.',
+    q: '¿Qué pasa si todavía no sé qué quiero crear?',
+    a: 'No necesitas entrar con todo definido. Parte del recorrido consiste en desarrollar esa claridad.',
   },
   {
-    q: '¿Qué pasa si me atraso con algún día?',
-    a: 'El acceso es tuyo, a tu ritmo. Puedes retomar cuando quieras: RENACER está pensado para acompañar tu vida real, no para presionarte con fechas límite.',
+    q: '¿Tengo que hacer un día exactamente cada día?',
+    a: 'Existe una secuencia recomendada, pero RENACER no está diseñado para convertir el proceso en otra fuente de culpa o perfeccionismo. Lo importante es continuar.',
   },
   {
-    q: '¿Cómo accedo al contenido después de comprar?',
-    a: 'Después de tu compra recibirás las instrucciones de acceso a la plataforma de acompañamiento con todo el contenido organizado día a día.',
+    q: '¿Cuánto tiempo necesito?',
+    a: 'El programa está creado para integrarse a tu vida cotidiana. Cada día puede combinar audio, reflexión, escritura o práctica.',
   },
   {
-    q: '¿Funciona si no vivo en Panamá?',
-    a: 'Sí. RENACER es completamente digital, así que puedes vivir el proceso desde cualquier país y en tu propio huso horario.',
-  },
-  {
-    q: '¿Cómo funciona el acompañamiento con inteligencia artificial?',
-    a: 'Cada persona recibe una guía con IA entrenada en el proceso de RENACER, que continúa la conversación de tu diario cada día. No reemplaza el acompañamiento humano ni da respuestas absolutas: te hace preguntas, como el resto del programa.',
+    q: '¿RENACER garantiza resultados?',
+    a: 'No. El resultado depende del proceso, las decisiones, la implementación y la realidad de cada persona. RENACER ofrece estructura, herramientas, acompañamiento y dirección.',
   },
 ]
 

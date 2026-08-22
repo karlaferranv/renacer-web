@@ -59,6 +59,7 @@
 }
 
 .navbar .btn {
-  padding: 0.7rem 1.4rem;
-  font-size: 0.82rem;
+  padding: 0.7rem 1.1rem;
+  font-size: clamp(0.68rem, 2.6vw, 0.82rem);
+  white-space: nowrap;
 }
