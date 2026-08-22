@@ -1,0 +1,18 @@
+Coloca aquí tus fotos con estos nombres EXACTOS (todo en minúsculas):
+
+hero-photo.jpg      → tu foto de fondo en la página de inicio (detrás del texto "Sabes resolverlo todo...")
+karla.jpg           → tu foto en la sección "Manifestación Magnética"
+amate.jpg           → foto/imagen para la fase Ámate
+arte-energia.jpg    → foto/imagen para la fase El Arte de la Energía
+magnetica.jpg       → foto/imagen para la fase Magnética
+
+Recomendaciones:
+- Formato vertical (proporción 4:5, como una foto de Instagram en retrato) — aplica a karla.jpg, amate.jpg, arte-energia.jpg y magnetica.jpg
+- Para hero-photo.jpg: usa una foto más horizontal/amplia (cubre todo el ancho de la pantalla), con el punto de mayor interés centrado — el texto se ve por encima con un velo crema semitransparente
+- Peso ligero: idealmente menos de 500 KB por foto, para que la página cargue rápido
+  (puedes comprimirlas gratis en squoosh.app o tinypng.com antes de subirlas)
+- Si usas .png en vez de .jpg, cambia la extensión también dentro del código
+  (busca el archivo del componente correspondiente y cambia ".jpg" por ".png")
+
+Una vez que agregues las fotos aquí, súbelas igual que siempre con GitHub Desktop
+(Commit → Push) y Vercel las publica solas.

@@ -7,6 +7,8 @@
   overflow: hidden;
   background:
     radial-gradient(ellipse at 82% 12%, rgba(201, 161, 95, 0.16), transparent 55%),
+    linear-gradient(180deg, rgba(250, 241, 234, 0.82), rgba(250, 241, 234, 0.92)),
+    url('/images/hero-photo.jpg') center 20% / cover no-repeat,
     var(--cream);
 }
 

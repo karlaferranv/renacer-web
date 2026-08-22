@@ -6,7 +6,9 @@ export default function AmateSection() {
   return (
     <section className="section phase-section">
       <div className={`section-inner phase-grid reveal ${visible ? 'is-visible' : ''}`} ref={ref}>
-        <div className="phase-visual">[IMAGEN_AMATE]</div>
+        <div className="phase-visual">
+          <img src="/images/amate.jpg" alt="Ámate — fase 1 de RENACER" />
+        </div>
         <div className="phase-copy">
           <span className="eyebrow">Fase 01 · 21 días</span>
           <h3>Ámate</h3>

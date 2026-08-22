@@ -6,7 +6,9 @@ export default function AboutKarla() {
   return (
     <section id="marca" className="section about">
       <div className={`section-inner about-grid reveal ${visible ? 'is-visible' : ''}`} ref={ref}>
-        <div className="about-photo">[FOTO_KARLA]</div>
+        <div className="about-photo">
+          <img src="/images/karla.jpg" alt="Karla, fundadora de Manifestación Magnética" />
+        </div>
         <div className="about-copy">
           <span className="eyebrow">Manifestación Magnética</span>
           <h2>Un espacio para volver a ti y construir desde ahí.</h2>

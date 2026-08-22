@@ -6,7 +6,9 @@ export default function EnergiaSection() {
   return (
     <section className="section phase-section reverse">
       <div className={`section-inner phase-grid reveal ${visible ? 'is-visible' : ''}`} ref={ref}>
-        <div className="phase-visual">[IMAGEN_ARTE_ENERGIA]</div>
+        <div className="phase-visual">
+          <img src="/images/arte-energia.jpg" alt="El Arte de la Energía — fase 2 de RENACER" />
+        </div>
         <div className="phase-copy">
           <span className="eyebrow">Fase 02 · 31 días</span>
           <h3>El Arte de la Energía</h3>

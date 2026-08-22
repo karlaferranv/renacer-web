@@ -6,7 +6,9 @@ export default function MagneticaSection() {
   return (
     <section className="section phase-section">
       <div className={`section-inner phase-grid reveal ${visible ? 'is-visible' : ''}`} ref={ref}>
-        <div className="phase-visual">[IMAGEN_MAGNETICA]</div>
+        <div className="phase-visual">
+          <img src="/images/magnetica.jpg" alt="Magnética — fase 3 de RENACER" />
+        </div>
         <div className="phase-copy">
           <span className="eyebrow">Fase 03 · 8 semanas</span>
           <h3>Magnética</h3>

@@ -23,7 +23,7 @@ export default function Pricing() {
           <span className="eyebrow">RENACER · 90 días</span>
           <h3>El programa completo</h3>
           <p className="pricing-amount">
-            ${siteConfig.prices.renacer} <span>USD</span>
+            <span className="highlight">${siteConfig.prices.renacer}</span> <span className="unit">USD</span>
           </p>
           <ul>
             <li>Ámate + El Arte de la Energía + Magnética</li>
@@ -46,7 +46,7 @@ export default function Pricing() {
             <div className="pricing-alt-card" key={p.key}>
               <h4>{p.name}</h4>
               <span className="phase-duration">{p.duration}</span>
-              <p className="amount">${siteConfig.prices[p.key]}</p>
+              <p className="amount"><span className="highlight">${siteConfig.prices[p.key]}</span></p>
               {siteConfig.available[p.key] ? (
                 <a href={purchaseLink(p.key)} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
                   Quiero empezar
