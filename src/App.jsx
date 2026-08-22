@@ -7,8 +7,6 @@ import Journey from './components/Journey'
 import AmateSection from './components/AmateSection'
 import EnergiaSection from './components/EnergiaSection'
 import MagneticaSection from './components/MagneticaSection'
-import WhatsInside from './components/WhatsInside'
-import ProductShowcase from './components/ProductShowcase'
 import Experience from './components/Experience'
 import ForYou from './components/ForYou'
 import NotThis from './components/NotThis'
@@ -33,8 +31,6 @@ export default function App() {
         <AmateSection />
         <EnergiaSection />
         <MagneticaSection />
-        <WhatsInside />
-        <ProductShowcase />
         <Experience />
         <ForYou />
         <NotThis />

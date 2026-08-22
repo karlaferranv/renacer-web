@@ -46,14 +46,30 @@ export default function MagneticaSection() {
 
       <div className="section-inner">
         <p className="adn-title">Las 8 áreas de Magnética</p>
-        <div className="adn-grid">
-          {areas.map((a) => (
-            <div className="adn-item" key={a.num}>
-              <span className="adn-num">ADN {a.num}</span>
-              <h4>{a.title}</h4>
-              <p>{a.text}</p>
-            </div>
-          ))}
+
+        <div className={`road road-magnetica reveal ${visible ? 'is-visible' : ''}`} ref={ref}>
+          <svg className="road-svg" viewBox="0 0 400 1400" preserveAspectRatio="none">
+            <path d="M60,60 C300,60 300,240 340,240 C100,240 100,420 60,420 C300,420 300,600 340,600 C100,600 100,780 60,780 C300,780 300,960 340,960 C100,960 100,1140 60,1140 C300,1140 300,1320 340,1320" />
+          </svg>
+
+          {areas.map((a, i) => {
+            const isRight = i % 2 === 1
+            const top = ((60 + i * 180) / 1400) * 100
+            return (
+              <div
+                className={`road-stop road-stop-adn ${isRight ? 'road-stop-right' : ''}`}
+                key={a.num}
+                style={isRight ? { top: `${top}%`, right: '15%' } : { top: `${top}%`, left: '15%' }}
+              >
+                <span className="road-dot"></span>
+                <div className="road-label">
+                  <span className="road-num">ADN {a.num}</span>
+                  <span className="road-title">{a.title}</span>
+                  <span className="road-text">{a.text}</span>
+                </div>
+              </div>
+            )
+          })}
         </div>
 
         <p className="phase-outcome adn-outcome">

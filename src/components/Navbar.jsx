@@ -26,7 +26,7 @@ export default function Navbar() {
       </a>
 
       <nav className="navbar-links">
-        <a href="#renacer">RENACER</a>
+        <a href="#renacer">Renacer</a>
         <a href="#recorrido">El recorrido</a>
         <a href="#marca">Manifestación Magnética</a>
         <a href="#precios">Inversión</a>

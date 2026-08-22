@@ -9,20 +9,20 @@ export default function AboutKarla() {
         <span className="eyebrow">Manifestación Magnética</span>
         <h2>Creado desde Manifestación Magnética.</h2>
         <p className="brand-lead">
-          Manifestación Magnética nació como un espacio para hablar de manifestación,
+          Manifestación Magnética nació como un espacio para hablar de <span className="pop-text">manifestación</span>,
           crecimiento personal, energía y conexión interior. Con el tiempo se convirtió en
           algo más amplio.
         </p>
         <p>
           Hoy reúne experiencias, diarios, herramientas y procesos diseñados para acompañar a
-          personas que quieren conocerse con mayor profundidad, dirigir mejor su energía y
+          personas que quieren <span className="highlight">conocerse con mayor profundidad</span>, dirigir mejor su energía y
           construir una vida con intención.
         </p>
         <p>
           Aquí la manifestación no se entiende como sentarse a esperar que algo suceda. Se
           entiende como una combinación de autoconocimiento, energía, intención, decisiones y
-          acción. Porque manifestar no es escapar de tu realidad. Es aprender a participar
-          conscientemente en su creación.
+          acción. Porque manifestar no es escapar de tu realidad. Es aprender a <span className="pop-text">participar
+          conscientemente</span> en su creación.
         </p>
 
         <div className="brand-grid">

@@ -45,6 +45,88 @@
   color: var(--earth-dark);
 }
 
+/* ============ CARRETERA (línea curva reutilizable: Método y Magnética) ============ */
+.road {
+  position: relative;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.road-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.road-svg path {
+  fill: none;
+  stroke: var(--terracotta);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-dasharray: 9 12;
+  opacity: 0.55;
+}
+.road-stop {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  transform: translateY(-50%);
+  max-width: 78%;
+}
+.road-stop-right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.road-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--terracotta);
+  border: 3px solid var(--cream);
+  box-shadow: 0 0 0 1px var(--terracotta);
+  flex-shrink: 0;
+}
+.road-label {
+  display: flex;
+  flex-direction: column;
+}
+.road-num {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--terracotta);
+}
+.road-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 2.6vw, 1.35rem);
+  color: var(--earth-dark);
+}
+.road-text {
+  font-size: 0.78rem;
+  color: var(--earth-soft);
+  line-height: 1.5;
+  margin-top: 0.2rem;
+}
+
+.road-method {
+  aspect-ratio: 300 / 640;
+}
+.road-magnetica {
+  aspect-ratio: 400 / 1400;
+  margin-top: 2.6rem;
+  max-width: 560px;
+}
+.road-stop-adn {
+  max-width: 60%;
+}
+.road-stop-adn .road-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /* ============ INTRO ============ */
 .intro {
   background: var(--cream);
@@ -495,11 +577,11 @@
 
 /* ============ EXPERIENCE ============ */
 .experience {
-  background: var(--white-warm);
-  border-top: 1px solid var(--line);
+  background: var(--terracotta);
   text-align: center;
 }
 .experience h2 {
+  color: var(--white-warm);
   font-size: clamp(1.9rem, 4.6vw, 3rem);
   max-width: 680px;
   margin: 0 auto;
@@ -507,7 +589,7 @@
 .experience-lead {
   margin: 1.4rem auto 0;
   max-width: 560px;
-  color: var(--earth-soft);
+  color: rgba(253, 248, 244, 0.85);
   line-height: 1.8;
 }
 .experience-verbs {
@@ -520,18 +602,18 @@
 .experience-verbs span {
   font-family: var(--font-display);
   font-size: clamp(1.1rem, 2.6vw, 1.5rem);
-  color: var(--terracotta);
+  color: var(--pop);
 }
 .experience-verbs span:not(:last-child)::after {
   content: '·';
   margin-left: 0.9rem;
-  color: var(--line);
+  color: rgba(253, 248, 244, 0.4);
 }
 .experience-close {
   font-family: var(--font-display);
   font-style: italic;
   font-size: clamp(1.05rem, 2.2vw, 1.3rem);
-  color: var(--earth-dark);
+  color: var(--white-warm);
   max-width: 500px;
   margin: 0 auto;
 }
@@ -794,9 +876,10 @@
 
 /* ============ MANIFESTACIÓN MAGNÉTICA (marca) ============ */
 .brand {
-  background: var(--cream-deep);
+  background: var(--wine);
 }
 .brand h2 {
+  color: var(--white-warm);
   font-size: clamp(1.9rem, 4.6vw, 3rem);
   max-width: 620px;
 }
@@ -805,14 +888,14 @@
   font-family: var(--font-display);
   font-style: italic;
   font-size: clamp(1.05rem, 2.2vw, 1.25rem);
-  color: var(--earth-dark);
+  color: var(--white-warm);
   max-width: 640px;
   line-height: 1.6;
 }
 .brand > .section-inner > p {
   margin-top: 1.1rem;
   max-width: 680px;
-  color: var(--earth-soft);
+  color: rgba(253, 248, 244, 0.72);
   line-height: 1.8;
 }
 .brand-grid {
@@ -827,20 +910,23 @@
 }
 .brand-block {
   padding-top: 1.2rem;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid rgba(253, 248, 244, 0.18);
 }
 .brand-block h3 {
   font-size: 1.05rem;
   margin-bottom: 0.6rem;
-  color: var(--terracotta);
+  color: var(--pop);
   font-family: var(--font-body);
   font-weight: 600;
   letter-spacing: 0.02em;
 }
 .brand-block p {
   font-size: 0.9rem;
-  color: var(--earth-soft);
+  color: rgba(253, 248, 244, 0.68);
   line-height: 1.7;
+}
+.brand .eyebrow {
+  color: var(--copper);
 }
 
 /* ============ TESTIMONIALS ============ */
@@ -899,15 +985,16 @@
   font-size: clamp(1.9rem, 4.6vw, 3rem);
 }
 .pricing-main {
-  max-width: 620px;
+  max-width: 640px;
   margin: 0 auto;
-  padding: 2.6rem clamp(1.6rem, 5vw, 3rem);
-  background: var(--white-warm);
-  border: 1px solid var(--earth-dark);
+  padding: 3rem clamp(1.6rem, 5vw, 3.4rem);
+  background: var(--wine);
+  border: none;
   border-radius: var(--radius);
   text-align: center;
 }
 .pricing-main .eyebrow {
+  color: var(--copper);
   margin-bottom: 0.8rem;
 }
 .pricing-main h3 {
@@ -916,7 +1003,7 @@
 }
 .pricing-amount {
   font-family: var(--font-display);
-  font-size: clamp(2.6rem, 8vw, 3.6rem);
+  font-size: clamp(3.2rem, 10vw, 4.6rem);
   color: var(--terracotta);
   margin: 0.6rem 0;
 }
@@ -925,9 +1012,9 @@
   font-family: inherit;
 }
 .pricing-amount .unit {
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-family: var(--font-body);
-  color: var(--earth-soft);
+  color: rgba(253, 248, 244, 0.7);
 }
 .pricing-main ul {
   list-style: none;
@@ -942,7 +1029,7 @@
 }
 .pricing-main li {
   font-size: 0.92rem;
-  color: var(--earth-soft);
+  color: rgba(253, 248, 244, 0.75);
   padding-left: 1.3rem;
   position: relative;
 }
@@ -954,7 +1041,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--terracotta);
+  background: var(--pop);
 }
 .pricing-main .btn {
   width: 100%;
@@ -963,8 +1050,9 @@
 .pricing-tagline {
   font-family: var(--font-display);
   font-style: italic;
-  color: var(--earth-soft);
-  margin-bottom: 1.6rem;
+  font-size: clamp(1.1rem, 2.4vw, 1.35rem);
+  color: rgba(253, 248, 244, 0.8);
+  margin-bottom: 1.8rem;
 }
 
 .pricing-summary {
@@ -981,20 +1069,20 @@
 }
 .pricing-summary-phase {
   background: var(--white-warm);
-  padding: 1.4rem;
+  padding: 1.7rem;
   text-align: center;
 }
 .pricing-summary-phase .phase-duration {
   display: block;
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: var(--earth-dark);
   text-transform: none;
   letter-spacing: normal;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
 }
 .pricing-summary-phase p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: var(--earth-soft);
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -1002,16 +1090,16 @@
 .pricing-includes {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.6rem;
   justify-content: center;
   margin-bottom: 3rem;
 }
 .pricing-includes span {
-  font-size: 0.75rem;
-  color: var(--earth-soft);
+  font-size: 0.85rem;
+  color: var(--earth-dark);
   border: 1px solid var(--line);
   border-radius: 999px;
-  padding: 0.35rem 0.8rem;
+  padding: 0.45rem 0.95rem;
 }
 
 .pricing-alt {
@@ -1030,6 +1118,8 @@
   border-radius: var(--radius);
   text-align: center;
   background: var(--white-warm);
+  display: flex;
+  flex-direction: column;
 }
 .pricing-alt-card h4 {
   font-size: 0.95rem;
@@ -1046,16 +1136,52 @@
   font-size: inherit;
   font-family: inherit;
 }
+.pricing-alt-includes-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  margin-bottom: 0.6rem;
+}
+.pricing-alt-includes {
+  list-style: none;
+  margin: 0 0 1.2rem;
+  padding: 0;
+  text-align: left;
+  display: grid;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+.pricing-alt-includes li {
+  font-size: 0.78rem;
+  color: var(--earth-soft);
+  line-height: 1.4;
+  padding-left: 1rem;
+  position: relative;
+}
+.pricing-alt-includes li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--terracotta);
+}
 .pricing-alt-card .btn {
   width: 100%;
   padding: 0.7rem 1rem;
   font-size: 0.82rem;
+  margin-top: auto;
 }
 .pricing-note {
   text-align: center;
   margin-top: 2.2rem;
-  font-size: 0.85rem;
-  color: var(--earth-soft);
+  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+  font-family: var(--font-display);
+  color: var(--earth-dark);
 }
 
 /* ============ FAQ ============ */
