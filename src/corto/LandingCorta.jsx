@@ -2,16 +2,28 @@ import { useEffect, useState } from 'react'
 import { siteConfig, purchaseLink } from '../config/siteConfig'
 
 const phases = [
-  { num: '01', name: 'Ámate', duration: '21 días', tone: 'terracotta' },
-  { num: '02', name: 'El Arte de la Energía', duration: '31 días', tone: 'wine' },
-  { num: '03', name: 'Magnética', duration: '8 semanas', tone: 'dark' },
+  { num: '01', name: 'Ámate', duration: '21 días', text: 'Volver a ti. 21 audios de acompañamiento (+4h) y 5 meditaciones.', tone: 'terracotta' },
+  { num: '02', name: 'El Arte de la Energía', duration: '31 días', text: 'Dirigir tu energía. Diario, clases de integración y respiración.', tone: 'wine' },
+  { num: '03', name: 'Magnética', duration: '8 semanas', text: 'Construir algo real. 8 áreas y workbook de ≈198 páginas.', tone: 'dark' },
 ]
 
-const forYou = [
-  'Sabes que quieres algo diferente, aunque no lo puedas explicar del todo',
-  'Has trabajado en ti, pero sientes que necesitas dirección',
-  'Estás cansada de esperar sentirte lista',
-  'Quieres unir trabajo interno con acción real',
+const forYouItems = [
+  { text: 'Sabes que quieres algo diferente, aunque no lo puedas explicar del todo', tone: 'terracotta' },
+  { text: 'Has trabajado en ti, pero sientes que necesitas dirección', tone: 'wine' },
+  { text: 'Quieres dejar de quedarte solo en la inspiración', tone: 'dark' },
+  { text: 'Tienes ideas o proyectos que no has logrado estructurar', tone: 'copper' },
+  { text: 'Estás cansada de esperar sentirte lista', tone: 'pop' },
+  { text: 'Quieres unir trabajo interno con acción real', tone: 'wine' },
+]
+
+const formats = [
+  { name: 'Audios de acompañamiento', text: '21 audios (+4 horas), conversaciones íntimas, no clases teóricas.' },
+  { name: 'Diarios de journaling', text: 'Un diario por fase, con preguntas y ejercicios de integración.' },
+  { name: 'Meditaciones guiadas', text: '5 prácticas para distintos momentos del recorrido.' },
+  { name: 'Clases de integración', text: 'Conectan varios días del proceso como un solo sistema.' },
+  { name: 'Respiración consciente', text: 'Ejercicios para regresar al presente y regular tu energía.' },
+  { name: 'Workbook de Magnética', text: '≈198 páginas de ejercicios, mapas y herramientas aplicadas.' },
+  { name: 'Guía con IA', text: 'Conversa contigo cada día, sin juzgar ni dar respuestas absolutas.' },
 ]
 
 const includes = ['21 audios', '31 días de práctica', '8 áreas de construcción', 'Diarios completos', 'Meditaciones', 'Guía con IA']
@@ -62,18 +74,35 @@ export default function LandingCorta() {
             <span className="corto-phase-num">{p.num}</span>
             <h3>{p.name}</h3>
             <span className="corto-phase-duration">{p.duration}</span>
+            <p className="corto-phase-text">{p.text}</p>
           </div>
         ))}
       </section>
 
-      {/* ===== ES PARA TI SI ===== */}
+      {/* ===== QUÉ TRAE RENACER — formatos reales ===== */}
+      <section className="corto-formats">
+        <h2>¿Qué trae RENACER, exactamente?</h2>
+        <div className="corto-formats-grid">
+          {formats.map((f) => (
+            <div className="corto-format-item" key={f.name}>
+              <h4>{f.name}</h4>
+              <p>{f.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ===== ES PARA TI SI — tarjetas de colores, interactivas ===== */}
       <section className="corto-foryou">
         <h2>RENACER es para ti si...</h2>
-        <ul>
-          {forYou.map((it) => (
-            <li key={it}>{it}</li>
+        <div className="corto-foryou-grid">
+          {forYouItems.map((it) => (
+            <div className={`corto-foryou-card corto-foryou-${it.tone}`} key={it.text}>
+              <span className="corto-foryou-check">✓</span>
+              <p>{it.text}</p>
+            </div>
           ))}
-        </ul>
+        </div>
       </section>
 
       {/* ===== PRECIO ===== */}
@@ -109,7 +138,7 @@ export default function LandingCorta() {
       {/* ===== CIERRE ===== */}
       <section className="corto-final">
         <p className="corto-final-text">
-          No necesitas tener toda tu vida resuelta. Necesitas dejar de posponer la
+          No necesitas tener toda tu vida resuelta. Necesitas <span className="pop-text">dejar de posponer</span> la
           conversación contigo misma.
         </p>
         <a href={purchaseLink('renacer')} target="_blank" rel="noopener noreferrer" className="btn btn-primary corto-cta-big">
