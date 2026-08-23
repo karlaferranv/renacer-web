@@ -1,0 +1,251 @@
+.corto {
+  background: var(--cream);
+}
+
+.renacer-mark {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(3.2rem, 12vw, 7rem);
+  line-height: 0.95;
+  color: var(--terracotta);
+  margin: 0 0 0.6rem;
+  letter-spacing: -0.01em;
+}
+
+/* ===== HEADER MINI ===== */
+.corto-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem clamp(1.25rem, 5vw, 3rem);
+  background: rgba(246, 241, 231, 0.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+.corto-header.scrolled {
+  border-bottom-color: var(--line);
+  background: rgba(246, 241, 231, 0.94);
+}
+.corto-brand {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--earth-dark);
+}
+.corto-header-btn {
+  padding: 0.6rem 1rem;
+  font-size: clamp(0.68rem, 2.6vw, 0.8rem);
+  white-space: nowrap;
+}
+
+/* ===== HERO ===== */
+.corto-hero {
+  padding: 4rem clamp(1.25rem, 6vw, 3rem) 3.5rem;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.corto-hero-mark {
+  font-size: clamp(2.4rem, 11vw, 4rem);
+  margin-bottom: 0.6rem;
+}
+.corto-hero h1 {
+  font-size: clamp(1.6rem, 5.5vw, 2.4rem);
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+.corto-hero-note {
+  margin-top: 1.2rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+}
+
+.corto-cta-big {
+  width: 100%;
+  max-width: 380px;
+  padding: 1.15rem 1.5rem;
+  font-size: 1rem;
+}
+
+/* ===== FASES — bloques de color ===== */
+.corto-phases {
+  display: grid;
+  gap: 2px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 6vw, 3rem);
+}
+@media (min-width: 760px) {
+  .corto-phases {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.corto-phase-card {
+  padding: 2.2rem 1.6rem;
+  text-align: center;
+  color: var(--white-warm);
+}
+.corto-phase-terracotta {
+  background: var(--terracotta);
+}
+.corto-phase-wine {
+  background: var(--wine);
+}
+.corto-phase-dark {
+  background: var(--earth-dark);
+}
+.corto-phase-num {
+  display: block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  opacity: 0.75;
+  margin-bottom: 0.5rem;
+}
+.corto-phase-card h3 {
+  color: var(--white-warm);
+  font-size: clamp(1.2rem, 3.4vw, 1.5rem);
+  margin-bottom: 0.5rem;
+}
+.corto-phase-duration {
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+/* ===== ES PARA TI SI ===== */
+.corto-foryou {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 4rem clamp(1.25rem, 6vw, 3rem);
+  text-align: center;
+}
+.corto-foryou h2 {
+  font-size: clamp(1.5rem, 4.6vw, 2.2rem);
+  margin-bottom: 2rem;
+}
+.corto-foryou ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+  text-align: left;
+}
+.corto-foryou li {
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 2.6vw, 1.2rem);
+  color: var(--earth-dark);
+}
+.corto-foryou li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+/* ===== PRECIO ===== */
+.corto-price {
+  max-width: 560px;
+  margin: 2rem auto;
+  padding: 3rem clamp(1.6rem, 6vw, 3rem);
+  background: var(--wine);
+  border-radius: var(--radius);
+  text-align: center;
+}
+.corto-price .eyebrow {
+  color: var(--copper);
+}
+.corto-price-amount {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 12vw, 4.2rem);
+  margin: 0.6rem 0 1.6rem;
+}
+.corto-price-amount .highlight {
+  font-size: inherit;
+  font-family: inherit;
+}
+.corto-price-amount .unit {
+  font-size: 1.1rem;
+  font-family: var(--font-body);
+  color: rgba(253, 248, 244, 0.7);
+}
+.corto-includes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.corto-includes span {
+  font-size: 0.75rem;
+  color: var(--pop);
+  border: 1px solid rgba(234, 255, 43, 0.35);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+}
+
+/* ===== FAQ MINI ===== */
+.corto-faq {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 4rem clamp(1.25rem, 6vw, 3rem);
+}
+.corto-faq h2 {
+  font-size: clamp(1.5rem, 4.6vw, 2.2rem);
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+.corto-faq-item {
+  border-top: 1px solid var(--line);
+}
+.corto-faq-item:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.corto-faq-item button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 0;
+  background: none;
+  border: none;
+  text-align: left;
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  color: var(--earth-dark);
+  cursor: pointer;
+}
+.corto-faq-icon {
+  color: var(--terracotta);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.corto-faq-item p {
+  padding-bottom: 1.2rem;
+  color: var(--earth-soft);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* ===== CIERRE ===== */
+.corto-final {
+  background: var(--terracotta);
+  padding: 4rem clamp(1.25rem, 6vw, 3rem) 5rem;
+  text-align: center;
+}
+.corto-final-text {
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.15rem, 3.6vw, 1.5rem);
+  color: var(--white-warm);
+  line-height: 1.5;
+}

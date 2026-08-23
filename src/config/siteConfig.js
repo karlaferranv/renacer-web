@@ -51,7 +51,16 @@ export const siteConfig = {
     email: 'hola@manifestacionmagnetica.com',
   },
 
-  // Mensaje que se envía por WhatsApp cuando aún no hay link de checkout
+  // Mensaje que se envía por WhatsApp cuando aún no hay link de checkout.
+  // Cada programa tiene el suyo, para que puedas identificar de un vistazo
+  // qué quiere comprar la persona y responder con tus respuestas rápidas.
+  whatsappMessages: {
+    renacer: 'Hola Karla, quiero comenzar mi RENACER completo (las 3 fases) 🌿 ¿Me cuentas cómo inscribirme?',
+    amate: 'Hola Karla, quiero comenzar Ámate 🌿 ¿Me cuentas cómo inscribirme?',
+    arte: 'Hola Karla, quiero comenzar El Arte de la Energía 🌿 ¿Me cuentas cómo inscribirme?',
+    magnetica: 'Hola Karla, quiero comenzar Magnética 🌿 ¿Me cuentas cómo inscribirme?',
+    vip: 'Hola Karla, quiero información sobre el Acompañamiento VIP 1:1 🌿',
+  },
   whatsappMessageDefault: 'Hola Karla, quiero comenzar mi RENACER 🌿 ¿Me cuentas cómo inscribirme?',
 }
 
@@ -62,9 +71,12 @@ export function whatsappLink(message = siteConfig.whatsappMessageDefault) {
 }
 
 // Devuelve el link correcto para un botón de compra:
-// usa el checkout externo si existe, si no, cae a WhatsApp.
+// usa el checkout externo si existe (Hotmart, Cuanto...), si no, cae a
+// WhatsApp con el mensaje específico de ese programa — así identificas
+// de inmediato qué quiere comprar la persona antes de contestar.
 export function purchaseLink(key, customMessage) {
   const external = siteConfig.checkout[key]
   if (external && external.trim() !== '') return external
-  return whatsappLink(customMessage)
+  const message = customMessage || siteConfig.whatsappMessages[key] || siteConfig.whatsappMessageDefault
+  return whatsappLink(message)
 }
