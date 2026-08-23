@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 import { siteConfig, purchaseLink } from '../config/siteConfig'
 
 const phases = [
-  { num: '01', name: 'Ámate', duration: '21 días', text: 'Volver a ti. 21 audios de acompañamiento (+4h) y 5 meditaciones.', tone: 'terracotta' },
-  { num: '02', name: 'El Arte de la Energía', duration: '31 días', text: 'Dirigir tu energía. Diario, clases de integración y respiración.', tone: 'wine' },
-  { num: '03', name: 'Magnética', duration: '8 semanas', text: 'Construir algo real. 8 áreas y workbook de ≈198 páginas.', tone: 'dark' },
+  { num: '01', name: 'Ámate', duration: '21 días', tags: ['21 audios', '5 meditaciones', 'Diario', 'Journaling'], tone: 'terracotta' },
+  { num: '02', name: 'El Arte de la Energía', duration: '31 días', tags: ['~5 audios', '5 clases', 'Diario', 'Respiración'], tone: 'wine' },
+  { num: '03', name: 'Magnética', duration: '8 semanas', tags: ['~5 audios', '4 clases', 'Workbook', 'Plataforma'], tone: 'dark' },
 ]
 
 const forYouItems = [
@@ -14,16 +14,6 @@ const forYouItems = [
   { text: 'Tienes ideas o proyectos que no has logrado estructurar', tone: 'copper' },
   { text: 'Estás cansada de esperar sentirte lista', tone: 'pop' },
   { text: 'Quieres unir trabajo interno con acción real', tone: 'wine' },
-]
-
-const formats = [
-  { name: 'Audios de acompañamiento', text: '21 audios (+4 horas), conversaciones íntimas, no clases teóricas.' },
-  { name: 'Diarios de journaling', text: 'Un diario por fase, con preguntas y ejercicios de integración.' },
-  { name: 'Meditaciones guiadas', text: '5 prácticas para distintos momentos del recorrido.' },
-  { name: 'Clases de integración', text: 'Conectan varios días del proceso como un solo sistema.' },
-  { name: 'Respiración consciente', text: 'Ejercicios para regresar al presente y regular tu energía.' },
-  { name: 'Workbook de Magnética', text: '≈198 páginas de ejercicios, mapas y herramientas aplicadas.' },
-  { name: 'Guía con IA', text: 'Conversa contigo cada día, sin juzgar ni dar respuestas absolutas.' },
 ]
 
 const includes = ['21 audios', '31 días de práctica', '8 áreas de construcción', 'Diarios completos', 'Meditaciones', 'Guía con IA']
@@ -67,29 +57,20 @@ export default function LandingCorta() {
         <p className="corto-hero-note">3 fases · 90 días · guía con IA incluida</p>
       </section>
 
-      {/* ===== LAS 3 FASES — visual, en bloques de color ===== */}
+      {/* ===== LAS 3 FASES — visual, en bloques de color, con lo que incluye cada una ===== */}
       <section className="corto-phases">
         {phases.map((p) => (
           <div className={`corto-phase-card corto-phase-${p.tone}`} key={p.num}>
             <span className="corto-phase-num">{p.num}</span>
             <h3>{p.name}</h3>
             <span className="corto-phase-duration">{p.duration}</span>
-            <p className="corto-phase-text">{p.text}</p>
+            <div className="corto-phase-tags">
+              {p.tags.map((t) => (
+                <span key={t}>{t}</span>
+              ))}
+            </div>
           </div>
         ))}
-      </section>
-
-      {/* ===== QUÉ TRAE RENACER — formatos reales ===== */}
-      <section className="corto-formats">
-        <h2>¿Qué trae RENACER, exactamente?</h2>
-        <div className="corto-formats-grid">
-          {formats.map((f) => (
-            <div className="corto-format-item" key={f.name}>
-              <h4>{f.name}</h4>
-              <p>{f.text}</p>
-            </div>
-          ))}
-        </div>
       </section>
 
       {/* ===== ES PARA TI SI — tarjetas de colores, interactivas ===== */}
